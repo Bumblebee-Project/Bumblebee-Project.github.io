@@ -1,0 +1,23 @@
+BODY{
+  background-color:#424242;
+  color:white;
+}
+.bb_logo{
+  position:fixed;
+  left:0px;
+  top:0px;
+  height:100px;
+  width:100px;
+}
+.bb_menu{
+  position:fixed;
+  left:0px;
+  top:100px;
+  width:120px;
+}
+.bb_body{
+  margin-left:130px;
+}
+A, A:active, A:visited, A:hover{
+  color:#f1c90a;
+}
