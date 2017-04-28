@@ -1,63 +1,85 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Bumblebee - NVIDIA Optimus support for Linux!</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-  <body>
-    <div class="bb_logo"><object data="/logo.svg" type="image/svg+xml" width=100 height=100><noscript><img src="/logo.png" width=100 height=100></noscript></object></div>
-    <div class="bb_menu">
-    <ul>
-      <li><a href="/index.html">Home</a></li>
-      <li><a href="http://bumblebee-project.org/source">Code</a></li>
-      <li><b>Installing</b></li>
-      <li><a href="http://wiki.bumblebee-project.org">Wiki</a></li>
-    </ul>
-    </div>
-    <div class="bb_body">
-      <h1>Installing Bumblebee 3.2.1</h1>
-      <ul>
-        <li><a href="#Arch">Arch Linux</a></li>
-        <li><a href="#Debian">Debian Linux</a></li>
-        <li><a href="#Fedora">Fedora Linux</a></li>
-        <li><a href="#Gentoo">Gentoo Linux</a></li>
-        <li><a href="#Mandriva">Mandriva Linux</a></li>
-        <li><a href="#Slackware">Slackware Linux</li>
-        <li><a href="#Ubuntu">Ubuntu Linux</a></li>
-        <li><a href="#source">from source / Generic installation instructions</a></li>
-      </ul>
-      <hr>
-      <h2><a name="Arch"></a>Arch linux</h2>
-      <p>Install package bumblebee from AUR.<br>If you want the bleeding edge, in-development version, you can install bumblebee-git.<br>Both packages can be used with Nvidia or Nouveau drivers.<br>For 32-bit applications on 64-bit systems you must install lib32-virtualgl and relevant lib32-* libraries.<br>To add Power Management functionality you need to install bbswitch-git package.<br><a href="https://wiki.archlinux.org/index.php/Bumblebee#Installation">More help and information for Arch can be found here.</a></p>
+---
+layout: default
+title: Installing Bumblebee
+---
 
-      <h2><a name="Debian"></a>Debian linux</h2>
-      <p>Follow instructions <a href="https://wiki.debian.org/Bumblebee#Installation">here</a>.</p>
+<div class="bb_body">
+  <h1>Installing Bumblebee 3.2.1</h1>
+  <ul>
+    <li><a href="#Arch">Arch Linux</a></li>
+    <li><a href="#Debian">Debian Linux</a></li>
+    <li><a href="#Fedora">Fedora Linux</a></li>
+    <li><a href="#Gentoo">Gentoo Linux</a></li>
+    <li><a href="#Mandriva">Mandriva Linux</a></li>
+    <li><a href="#Slackware">Slackware Linux</li>
+    <li><a href="#Ubuntu">Ubuntu Linux</a></li>
+    <li><a href="#source">from source / Generic installation instructions</a></li>
+  </ul>
 
-      <h2><a name="Fedora"></a>Fedora linux</h2>
-      <p><a href="https://fedoraproject.org/wiki/Bumblebee">Help and information for Fedora can be found here.</a></p>
+  <hr class="horizontal-line-r">
 
-      <h2><a name="Gentoo"></a>Gentoo linux</h2>
-      <p><pre>emerge bumblebee</pre>After installation completes, add yourself to the "bumblebee" group to enable use of the optirun command. You will have to re-login for group changes to take effect.</p>
+  
+  <p>
+    <h2>Arch linux</h2>
+    Install package bumblebee from AUR. If you want the bleeding edge, in-development version, you can install bumblebee-git. Both packages can be used with Nvidia or Nouveau drivers.<br>
 
-      <h2><a name="Mandriva"></a>Mandriva linux</h2>
-      <p>Mandriva carries Bumblebee as an officially supported package. To install, simply run:<pre>urpmi bumblebee</pre>After installation completes, add yourself to the "bumblebee" group to enable use of the optirun command. You will have to re-login for group changes to take effect.<br><a href="http://wiki.mandriva.com/en/Bumblebee#Installation">More help and information for Mandriva can be found here.</a></p>
-      
-      <h2><a name="Slackware"></a>Slackware linux</h2>
-      <p>Follow instructions <a href="http://docs.slackware.com/howtos:hardware:nvidia_optimus">here</a>.</p>
+    For 32-bit applications on 64-bit systems you must install lib32-virtualgl and relevant lib32-* libraries. To add Power Management functionality you need to install bbswitch-git package.<br>
 
-      <h2><a name="Ubuntu"></a>Ubuntu linux</h2>
-      <p>Follow instructions <a href="https://wiki.ubuntu.com/Bumblebee#Installation">here</a>.</p>
+    More help and information for Arch can be found <a href="https://wiki.archlinux.org/index.php/Bumblebee#Installation">over here.</a>
+  </p>
 
-      <h2><a name="source"></a>from source / Generic installation instructions</h2>
-      <p>The best an recommended way to install Bumblebee is through your distribution repositories. If not such packages exist, then you can still install Bumblebee manually from source.</p>
-      <p>The latest source tarball:</p>
-      <ul>
-      <li><a
-      href="http://bumblebee-project.org/bumblebee-3.2.1.tar.gz">bumblebee-3.2.1.tar.gz</a>
-      (md5: <tt>30974e677bb13e8a3825fd6f3e7d3b24</tt>)
-      </ul>
-      <p><a href="http://wiki.bumblebee-project.org/Install-and-usage">Full instructions for a manual install can be found on our wiki here.</a></p>
+  
+  <p>
+    <h2>Debian linux</h2>
+    Follow instructions <a href="https://wiki.debian.org/Bumblebee#Installation">over here</a>.
+  </p>
 
-    </div>
-  </body>
-</html>
+  
+  <p>
+    <h2>Fedora linux</h2>
+
+    Help and information for Fedora can be found <a href="https://fedoraproject.org/wiki/Bumblebee">over here.</a>
+  </p>
+
+  
+  <p>
+    <h2>Gentoo linux</h2>
+    
+    <pre>emerge bumblebee</pre>
+    
+    After installation completes, add yourself to the "bumblebee" group to enable use of the optirun command. You will have to re-login for group changes to take effect.
+  </p>
+
+  <p>
+    <h2>Mandriva linux</h2>
+
+    Mandriva carries Bumblebee as an officially supported package. To install, simply run:
+    
+    <pre>urpmi bumblebee</pre>
+
+    After installation completes, add yourself to the "bumblebee" group to enable use of the optirun command. You will have to re-login for group changes to take effect. More help and information for Mandriva can be found
+    <a href="http://wiki.mandriva.com/en/Bumblebee#Installation">here.</a>
+  </p>
+  
+  <h2>Slackware linux</h2>
+  <p>Follow instructions <a href="http://docs.slackware.com/howtos:hardware:nvidia_optimus">here</a>.</p>
+
+  <h2>Ubuntu linux</h2>
+  <p>Follow instructions <a href="https://wiki.ubuntu.com/Bumblebee#Installation">here</a>.</p>
+
+  
+  <p>
+    <h2>From source</h2>
+    The best an recommended way to install Bumblebee is through your distribution repositories. If not such packages exist, then you can still install Bumblebee manually from source.
+  </p>
+  
+  <p>The latest source tarball:</p>
+
+  <ul>
+    <li><a
+    href="{{site.href}}/data/bumblebee-3.2.1.tar.gz">bumblebee-3.2.1.tar.gz</a>
+    (md5: <tt>30974e677bb13e8a3825fd6f3e7d3b24</tt>)
+  </ul>
+
+  <p><a href="http://wiki.bumblebee-project.org/Install-and-usage">Full instructions for a manual install can be found on our wiki here.</a></p>
+</div>

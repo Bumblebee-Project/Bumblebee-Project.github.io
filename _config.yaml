@@ -1,0 +1,21 @@
+navigation:
+- text: home
+  url: /index.html
+- text: wiki
+  url: https://github.com/Bumblebee-Project/Bumblebee/wiki
+- text: code
+  url: https://github.com/Bumblebee-Project/Bumblebee
+- text: install
+  url: /install.html
+- text: maintainers
+  url: /maintainers.html
+
+maintainers:
+  - text: Bruno Pagani 
+  - text: Luca Boccassi 
+  - text: Melroy van den Berg 
+  - text: Peter Wu 
+  - text: Joaquín Ignacio Aramendía
+  - text: Starks
+  - text: Jaron Viëtor
+  - text: Vincent Cheng

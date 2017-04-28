@@ -13,7 +13,7 @@
     	<div>
 	      <nav class="nav">
 	        <ul class="navigation">
-            <li><img src="/assets/images/favicon.ico" width="32" height="32"></li>
+            <li><img src="/assets/images/favicon.ico" width="32" height="32" class="logo"></li>
 	          {% for link in site.navigation %}
 	            <li><a class="{{ current }}" href="{{ link.url }}">{{ link.text }}</a></li>
 	          {% endfor %}
@@ -27,8 +27,8 @@
       </section>
 
       <footer class="">
-        <p>Bumblebee</p>
-        <img src="assets/images/favicon.ico">
+        <p>The Bumblebee <i><u>team</u></i></p>
+        <img src="assets/images/favicon.ico" class="logo">
       </footer>
     </body>
 </html>
