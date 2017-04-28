@@ -1,0 +1,18 @@
+---
+layout: default
+title: Bumblebee maintainers
+---
+
+<article>
+	<p>
+		Current project members are:
+
+		<ul>
+			{% for maintainer in site.maintainers %}
+	      <li>{{ maintainer.text }}</li>
+	    {% endfor %}
+		</ul>
+
+		This can also be seen <a href="https://github.com/orgs/Bumblebee-Project/people">here</a>.
+	</p>
+</article>
