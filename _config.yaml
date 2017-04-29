@@ -1,10 +1,10 @@
 navigation:
 - text: home
   url: /index.html
-- text: wiki
-  url: https://github.com/Bumblebee-Project/Bumblebee/wiki
-- text: code
-  url: https://github.com/Bumblebee-Project/Bumblebee
+- text: About
+  url: /about.html
+- text: releases
+  url: /releases.html
 - text: install
   url: /install.html
 - text: maintainers
