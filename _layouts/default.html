@@ -6,6 +6,8 @@
 
       <link rel="stylesheet" href="/assets/css/style.css">
 
+      <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+
       <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
     </head>
 
@@ -15,7 +17,7 @@
 	        <ul class="navigation">
             <li><img src="/assets/images/favicon.ico" width="32" height="32" class="logo"></li>
 	          {% for link in site.navigation %}
-	            <li><a class="{{ current }}" href="{{ link.url }}">{{ link.text }}</a></li>
+	            <li><a class="{{ %current }}" href="{{ link.url }}">{{ link.text }}</a></li>
 	          {% endfor %}
 	        </ul>
           <hr class="horizontal-line">
@@ -27,6 +29,12 @@
       </section>
 
       <footer class="">
+        <ul class="social">
+          <li><a href="http://bumblebee-project.org/facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li><a href="http://bumblebee-project.org/twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          <li><a href="http://bumblebee-project.org/g%2B"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+          <li><a href="https://github.com/Bumblebee-Project"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+        </ul>
         <p>The Bumblebee <i><u>team</u></i></p>
         <img src="assets/images/favicon.ico" class="logo">
       </footer>
