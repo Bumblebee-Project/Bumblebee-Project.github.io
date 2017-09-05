@@ -2,3 +2,7 @@
 # Folders to be ignored
 #
 _site/
+#
+# Inore lock files
+#
+*.lock
