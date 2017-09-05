@@ -2,6 +2,7 @@
 <html>
     <head>
       <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>{{ page.title }}</title>
 
       <link rel="stylesheet" href="/assets/css/style.css">
@@ -17,7 +18,7 @@
 	        <ul class="navigation">
             <li><img src="/assets/images/favicon.ico" width="32" height="32" class="logo"></li>
 	          {% for link in site.navigation %}
-	            <li><a class="{{ %current }}" href="{{ link.url }}">{{ link.text }}</a></li>
+			  <li><a href="{{ link.url }}">{{ link.text }}</a></li>
 	          {% endfor %}
 	        </ul>
           <hr class="horizontal-line">
