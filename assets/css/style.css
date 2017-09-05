@@ -11,10 +11,10 @@ body {
 a {
   color: #f1c90a;
   text-decoration: none;
-  -webkit-transition: all .2s ease-in;
-     -moz-transition: all .2s ease-in;
-       -o-transition: all .2s ease-in;
-         -transition: all .2s ease-in;
+  -webkit-transition: all .1s;
+     -moz-transition: all .1s;
+       -o-transition: all .1s;
+         -transition: all .1s;
 }
 
 nav {
@@ -84,6 +84,7 @@ ul.social > li {
 
 ul.social > li > a {
   color: #333;
+  padding: 15%;
 }
 
 ul.social > li > a:hover {
@@ -116,7 +117,40 @@ ul.social > li > a:hover {
   border: 3px solid #333;
 }
 
+
 .img-border {
   border: 7px solid #252525;
   background: #252525;
+}
+
+
+@media (max-width: 700px) {
+	ul.navigation {
+  		display: block;
+	}
+
+	ul.navigation > li {
+		width: 100%;
+		text-align: center;
+	}
+
+	ul.social {
+		display:block;
+	}
+	
+	ul.social > li {
+		text-align: center;
+	}
+
+	ul.social > li > a {
+		padding: 0;
+	}
+
+	img.responsive {
+		width: 100%;		
+	}
+
+	.img-border {
+		border: 3px solid rgb(25, 25, 25);
+	}
 }
